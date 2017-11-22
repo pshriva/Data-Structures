@@ -45,7 +45,6 @@ public class Main {
 					}
 					left++;
 				}
-				System.out.println("Size restored ");
 			}
 		}
 		maxLength = Math.max(maxLength, s.length()-left);

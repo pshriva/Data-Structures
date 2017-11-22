@@ -1,9 +1,17 @@
 package balancedParanthesisUsingStack;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Stack;
+
 // This one is not complete
 public class Main {
 	public static void main(String args[]){
-		String expression = "(:()";
-		boolean isBalanced = getBalancedStatus(expression);
+		String expression = "(])";
+		boolean isBalanced = isValid(expression);
 		if(isBalanced == true){
 			System.out.println("Parantheses are balanced");
 		}else{
@@ -11,26 +19,20 @@ public class Main {
 		}
 }
 	
-	private static boolean getBalancedStatus(String expression) {
+	private static boolean isValid(String s) {
 		// TODO Auto-generated method stub
-		Stack s = new Stack();
-		for(int i = 0; i<expression.length();i++){
-			char c = expression.charAt(i);
-			if(c == '(' || c == '{' || c == '['){
-				s.push(c);
-			}if(c == ')' || c =='}' || c == ']'){
-				if(s.top == -1){
-					return false;
-				}
-				char c1 = s.pop();
-				if((c1 == '(' && c != ')') || (c1 =='{' && c !='}') || (c1 =='[' && c != ']')){
-					break;
-				}
+		Stack<Character> stack = new Stack<Character>();
+		for(int i = 0; i < s.length(); i++){
+			char c = s.charAt(i);
+			if(c == '(' || c == '[' || c == '{'){
+				stack.push(c);
+				continue;
 			}
+			else if(stack.isEmpty() || (c == ')' && stack.peek() != '(') || (c == ']' && stack.peek() != '[') || (c == '}' && stack.peek() != '{')){
+				return false;
+			}
+			stack.pop();
 		}
-		if(s.top == -1){
-			return true;
-		}
-		return false;
+		return stack.isEmpty();
 	}
 }

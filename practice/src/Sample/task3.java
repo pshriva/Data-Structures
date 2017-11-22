@@ -13,10 +13,10 @@ import java.util.*;
 class task3 {
 
  public static void main(String[] args){
-	 int[] A = {7,3,7,3,1,3,4,1};
+	 int[] A = {7,3,3,1,3,4,1,7};
+	// int[] A = {1,2};
 	 System.out.println(solution(A));
  }
- 
  public static int solution(int[] A) {
      if(A.length <= 1){
          return A.length;
@@ -33,10 +33,7 @@ class task3 {
              if(A[last] == A[first]){
                  first++;
                  last++;
-             } else
-            	 if(A[last] != A[first]){
-                     last++;
-                 }
+             }else{last++;}
      }
      return last- first;
      }

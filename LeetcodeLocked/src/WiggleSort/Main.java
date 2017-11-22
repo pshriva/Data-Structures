@@ -9,7 +9,7 @@ For example, given nums = [3, 5, 2, 1, 6, 4], one possible answer is [1, 6, 2, 5
  * */
 public class Main {
 	public static void main(String args[]){
-		int[] arr = {20, 10, 8, 6, 4, 2};
+		int[] arr = {2,4,1,3,8,9,7};
 		wiggleSort(arr);
 		for(int i : arr){
 			System.out.println(i);
