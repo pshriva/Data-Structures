@@ -17,6 +17,13 @@ public class Stack {
 		top++;
 		stack[top]=element;
 	}
+	public int peek(){
+		if(top != -1){return stack[top];}
+		throw new ArrayIndexOutOfBoundsException("Stack underflow");
+	}
+	public boolean isEmpty(){
+		return top == -1;
+	}
 	public int pop() {
 		// TODO Auto-generated method stub
 		if(top == -1){
@@ -26,19 +33,17 @@ public class Stack {
 		top--;
 		return element;
 	}
-	public void sort() {
+	public Stack sort() {
 		// TODO Auto-generated method stub
-		Stack s = new Stack(capacity);
+		Stack s  = new Stack(capacity);
 		while(top != -1){
-			sortAscending(s);
+			int i = pop();
+			while(!s.isEmpty() && s.peek() > i){
+				push(s.pop());
+			}
+			s.push(i);
 		}
-	}
-	private void sortAscending(Stack s) {
-		// TODO Auto-generated method stub
-		int element = pop();
-		if(s.top == -1){
-			s.top++;
-		}
+		return s;
 	}
 	
 }

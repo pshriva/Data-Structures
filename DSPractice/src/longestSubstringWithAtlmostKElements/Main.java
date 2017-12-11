@@ -35,7 +35,7 @@ public class Main {
 				System.out.println(key + " " + map.get(key));
 			}
 			if(map.size()>k){
-				maxLength = Math.max(maxLength, i-left);
+				//maxLength = Math.max(maxLength, i-left);
 				while(map.size()>k){
 					char ch = s.charAt(left);
 					if(map.get(ch) == 1){

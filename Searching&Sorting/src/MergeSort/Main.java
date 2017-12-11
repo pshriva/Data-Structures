@@ -2,7 +2,8 @@ package MergeSort;
 // TC: O(nlogn) and SC: O(n)
 public class Main {
 	public static void main(String args[]){
-		int[] arr = {3,6,12,76,23,9,87,12};
+		//int[] arr = {3,6,12,76,23,9,87,12};
+		int[] arr = {};
 		mergeSort(arr, 0, arr.length-1);
 		for(int i : arr){
 			System.out.println(i);
@@ -11,9 +12,9 @@ public class Main {
 
 	private static void mergeSort(int[] arr, int start, int end) {
 		// TODO Auto-generated method stub
-		if(arr.length == 0){
-			return;
-		}
+//		if(arr.length == 0){
+//			return;
+//		}
 		if(start < end){
 			int mid = start + (end - start)/2;
 			mergeSort(arr, start, mid);

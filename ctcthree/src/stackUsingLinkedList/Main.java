@@ -6,5 +6,6 @@ public class Main {
 		s.push(10);
 		int element = s.peek();
 		System.out.println(element);
+		System.out.println(s.pop());
 	}
 }

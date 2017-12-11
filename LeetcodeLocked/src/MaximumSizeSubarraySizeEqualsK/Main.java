@@ -25,20 +25,6 @@ public class Main {
 			}
 			if(!map.containsKey(sum)){map.put(sum, i);}
 		}
-		return 0;
+		return max;
 	}
-
-//	private static int maxSubArrayLen(int[] arr, int k) {
-//		// TODO Auto-generated method stub
-//		int max = 0;
-//		int sum = 0;
-//		Map<Integer,Integer> map = new HashMap<Integer,Integer>();
-//		for(int i = 0; i < arr.length; i++){
-//			sum = sum + arr[i];
-//			if(sum == k){max = i+1;}
-//			else if(map.containsKey(sum-k)){max = Math.max(max, i - map.get(sum-k));}
-//			if(!map.containsKey(sum)){map.put(sum, i);}
-//		}
-//		return max;
-//	}
 }

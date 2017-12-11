@@ -39,7 +39,7 @@ public class BinaryTree {
 		if(root == null || root == n1 || root == n2){
 			return root;
 		}
-		if(contains(root.left, n1) && contains(root.right, n2)){
+		if(contains(root.left, n1) && contains(root.left, n2)){
 			return getAncestor(root.left, n1, n2);
 		}else if(contains(root.right, n1) && contains(root.right, n2)){
 			return getAncestor(root.right, n1, n2);

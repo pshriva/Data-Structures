@@ -15,7 +15,6 @@ public class Main {
 			maxHeapify(arr, i);
 		}
 	}
-
 	private static void maxHeapify(int[] arr, int i) {
 		// TODO Auto-generated method stub
 		int leftChildIndex = 2*i + 1;

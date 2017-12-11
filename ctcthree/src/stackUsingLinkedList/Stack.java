@@ -9,6 +9,9 @@ public class Stack {
 		// TODO Auto-generated method stub
 		list.add(element);
 	}
+	public int pop(){
+		return list.remove();
+	}
 	public int peek() {
 		// TODO Auto-generated method stub
 		if (list.top == null){

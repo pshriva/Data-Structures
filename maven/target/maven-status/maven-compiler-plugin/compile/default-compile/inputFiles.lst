@@ -1,0 +1,9 @@
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/parsers/WFCsvParser.java
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/reducers/IWeatherCalculator.java
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/mappers/WFMeanCalculationMapper.java
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/model/WFDataPojo.java
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/partitioner/WeatherPartitioner.java
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/controller/WFDriver.java
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/parsers/WFMyComparator.java
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/reducers/WFRegressionCalculationReducer.java
+/Users/pranjali/Documents/SJSU/FromPrateekDataStructure/Workspace/maven/src/main/java/com/rnsit/weather/reducers/WFMeanCalculationReducer.java

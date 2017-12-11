@@ -8,9 +8,9 @@ public class Main {
 		s.push(0);
 		s.push(4);
 		s.push(5);
-		s.sort();
+		s = s.sort();
 		while(s.top != -1){
-			System.out.println(s.pop());
+			System.out.println(s. pop());
 		}
 	}
 }

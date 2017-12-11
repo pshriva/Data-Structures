@@ -23,4 +23,10 @@ public class LinkedList {
 		n.link = top; // always adding new element at the top of LL and removing also from top so as to maintain the O(1) time
 		top = n;
 	}
+	public int remove(){
+		if(top == null){throw new ArrayIndexOutOfBoundsException("Stack underflow");}
+		int n = top.data;
+		top = top.link;
+		return n;
+	}
 }

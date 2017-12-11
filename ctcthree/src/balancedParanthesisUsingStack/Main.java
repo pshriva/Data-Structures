@@ -1,21 +1,20 @@
 package balancedParanthesisUsingStack;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Stack;
 
 // This one is not complete
 public class Main {
-	public static void main(String args[]){
-		String expression = "(])";
-		boolean isBalanced = isValid(expression);
-		if(isBalanced == true){
-			System.out.println("Parantheses are balanced");
-		}else{
-			System.out.println("Parantheses are not balanced");
+	public static void main(String args[]) throws IOException{
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		//boolean isBalanced = isValid(expression);
+		String line;
+		while((line = in.readLine()) != null && line.length()!= 0){
+			boolean b = isValid(line);
+			if(b){System.out.println("True");}
+			else{System.out.println("False");}
 		}
 }
 	

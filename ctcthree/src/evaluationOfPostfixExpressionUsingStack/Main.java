@@ -1,4 +1,5 @@
-package evaluationOfPostfixExpressionUsingStack;
+
+ package evaluationOfPostfixExpressionUsingStack;
 
 //assuming all numbers in the string are single digit numbers
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
 			if(Character.isWhitespace(c)){
 				continue;
 			}
+			//another way to deal with more than 1 digit numbers is to originally convert the string to array splitting it with space delimiter
 			if(Character.isDigit(c)){
 				float value = Character.getNumericValue(c);
 				while(i < s.length()){
